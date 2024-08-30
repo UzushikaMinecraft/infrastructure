@@ -109,17 +109,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /mnt/storage1:/mnt/storage1
-      - /mnt/storage2:/mnt/storage2
-      - ./alpha/world:/app/alpha/world
-      - ./alpha/world_nether:/app/alpha/world_nether
-      - ./alpha/world_the_end:/app/alpha/world_the_end
-      - ./beta/world:/app/beta/world
-      - ./beta/world_nether:/app/beta/world_nether
-      - ./beta/world_the_end:/app/beta/world_the_end
-      - ./gamma/world:/app/gamma/world
-      - ./gamma/world_nether:/app/gamma/world_nether
-      - ./gamma/world_the_end:/app/gamma/world_the_end
+      - /:/host-rootfs/
     environment:
       TZ: "Asia/Tokyo"
   db:
@@ -138,10 +128,17 @@ services:
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
     networks:
       - db
+
   restart:
     container_name: restart
+    build:
+      context: ./restart
+      dockerfile: Dockerfile
     volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /:/host-rootfs/
       - /var/run/docker.sock:/var/run/docker.sock
-
+    environment:
+      TZ: "Asia/Tokyo"
 networks:
   db:

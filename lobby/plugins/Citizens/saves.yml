@@ -1,98 +1,98 @@
 # Citizens NPC Storage
 
-last-created-npc-id: 30
+last-created-npc-id: 59
 npc:
-  '30':
+  '59':
     name: §cこのサーバーはオフラインです
-    uuid: e5c514f0-7c40-4a68-a8a8-fae7c3e4c58d
+    uuid: b273ace7-98d9-4a19-9617-4732b9f0892f
     traits:
+      type: PANDA
       spawned: true
       location:
-        bodyYaw: 0.0
+        bodyYaw: 180.0
         world: world
-        x: 0.0
-        y: -45.0
-        z: 0.0
-        yaw: 0.0
-        pitch: 0.0
-      type: PANDA
-    traitnames: spawned,scoreboardtrait,location,type
+        x: 14.5
+        y: -60.0
+        z: 8.5
+        yaw: -180.0
+        pitch: 3.0
+    traitnames: type,scoreboardtrait,spawned,location
     navigator:
       speedmodifier: 1.0
       avoidwater: false
       usedefaultstuckaction: false
-  '29':
+  '58':
     name: §cこのサーバーはオフラインです
-    uuid: 86ab2449-8810-4b29-93fb-05394c994074
+    uuid: da162f46-5bd3-46d0-8e3b-35eb6c7bdcf3
     traits:
+      type: PANDA
       spawned: true
       location:
-        bodyYaw: 0.0
+        bodyYaw: 180.0
         world: world
-        x: 0.0
-        y: -45.0
-        z: 0.0
-        yaw: 0.0
-        pitch: 0.0
-      type: PANDA
-    traitnames: spawned,scoreboardtrait,location,type
+        x: 2.5
+        y: -60.0
+        z: 8.5
+        yaw: -180.0
+        pitch: 3.0
+    traitnames: type,scoreboardtrait,spawned,location
     navigator:
       speedmodifier: 1.0
       avoidwater: false
       usedefaultstuckaction: false
-  '28':
+  '57':
     name: §agamma§7 (0/30)
-    uuid: 70b4c7de-8e54-4f93-a955-fbd7f4d3ef8a
+    uuid: 664d4755-916a-44c5-b6fb-0a1ed5eee247
     traits:
+      type: PANDA
       spawned: true
       location:
         bodyYaw: 180.0
         world: world
-        x: 8.0
-        y: -56.0
-        z: -14.0
+        x: 11.5
+        y: -60.0
+        z: 8.5
         yaw: -180.0
         pitch: 3.0
-      type: PANDA
-    traitnames: spawned,scoreboardtrait,location,type
+    traitnames: type,scoreboardtrait,spawned,location
     navigator:
       speedmodifier: 1.0
       avoidwater: false
       usedefaultstuckaction: false
-  '27':
+  '56':
     name: §abeta§7 (0/30)
-    uuid: 046bc6a4-6088-42f0-b460-cfb962e0e91f
+    uuid: 940920a6-9dfc-4d7c-9fd2-1acc80a18add
     traits:
+      type: PANDA
       spawned: true
       location:
         bodyYaw: 180.0
         world: world
-        x: 4.0
-        y: -56.0
-        z: -14.0
+        x: 5.5
+        y: -60.0
+        z: 8.5
         yaw: -180.0
         pitch: 3.0
-      type: PANDA
-    traitnames: spawned,scoreboardtrait,location,type
+    traitnames: type,scoreboardtrait,spawned,location
     navigator:
       speedmodifier: 1.0
       avoidwater: false
       usedefaultstuckaction: false
-  '26':
+  '55':
     name: §aalpha§7 (0/30)
-    uuid: 09da9924-854a-482a-8792-058b302948e7
+    uuid: be02229c-bef0-408e-b98a-c71d32d9982b
     traits:
+      type: PANDA
       spawned: true
       location:
         bodyYaw: 180.0
         world: world
-        x: 5.8
-        y: -56.0
-        z: -14.0
+        x: 8.5
+        y: -60.0
+        z: 8.5
         yaw: -180.0
         pitch: 3.0
-      type: PANDA
-    traitnames: spawned,scoreboardtrait,location,type
+    traitnames: type,scoreboardtrait,spawned,location
     navigator:
       speedmodifier: 1.0
       avoidwater: false
