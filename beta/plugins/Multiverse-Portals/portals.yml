@@ -1,0 +1,11 @@
+portals:
+  world-to-resources:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: iamtakagi
+    location: -18.0,63.0,-113.0:-15.0,67.0,-113.0
+    world: world
+    destination: resources

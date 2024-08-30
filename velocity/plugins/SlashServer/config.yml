@@ -1,0 +1,19 @@
+servers:
+-   server: lobby
+    commands:
+    - hub
+    - lobby
+    permission: slashserver.server.lobby
+-   server: alpha
+    commands:
+    - alpha
+    permission: slashserver.server.alpha
+-   server: beta
+    commands:
+    - beta
+    permission: slashserver.server.beta
+-   server: gamma
+    commands:
+    - gamma
+    permission: slashserver.server.gamma
+version: 0

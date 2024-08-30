@@ -1,0 +1,16 @@
+sidebar:
+  title: "&dウズシカさーばー"
+  lines:
+    - "&rServer: alpha"
+    - "&r{PING}ms"
+    - "&r{WORLD}"
+    - "&r{WORLD_TIME} ({WEATHER})"
+    - "&r{X}, {Y}, {Z} ({DIRECTION})"
+    - "&r{TPS}TPS"
+    - "&r{USAGE_RAM} / {TOTAL_RAM} MB"
+    - "&7{DATE} {TIME}"
+  pattern:
+    date: YY/MM/dd
+    time: HH:mm:ss
+    world_date: MM/dd
+    world_time: HH:mm

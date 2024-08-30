@@ -1,0 +1,112 @@
+config-version: 2.8
+
+# If the plugin is not up-to-date, you will get a notification when you join the server.
+check-update: true
+
+prefix: '&a[&bEnchantGui&a] '
+
+# LEFT: Open the gui by left clicking the enchanting table, hold shift and left click to break the block
+# RIGHT: Open the gui by right clicking the enchanting table
+# BOTH: Open the gui by left/right clicking the enchanting table, hold shift and left click the break the block
+OpenAction: 'RIGHT'
+
+#Player are only allowed to open the "EnchantGui" only if the enchanting table was placed by an admin.
+Only-Admin-EnchantTable: true
+
+# If set to false, plugin wont open the gui for player if they don't have any item can be enchanted.
+# Also the plugin will send No-Available-Item message to player
+OpenGuiWhenNoAvailableItem: false
+
+# If enabled, the GUI will be closed when player is trying to enchant but they don't have enough money/level.
+CloseInventoryWhenNotEnoughCurrency: true
+
+# If enabled, player requires every single enchantment permission (such as enchantgui.enchantment.DAMAGE_ALL) to enchant.
+# Note: enchantgui.enchantment.ALL to access all the enchantments.
+# the permission above only player can access to all enchantments but not level. (If PermissionForEachEnchantmentLevel is enabled).
+# If you want to give player the permission that access to all Enchantments and level , give "enchantgui.enchantment.*" permission to them.
+PermissionForEachEnchantment: false
+
+# If enabled, player requires every single enchantments level (such as enchantgui.enchantment.DAMAGE_ALL.<level>) to enchant.
+PermissionForEachEnchantmentLevel: false
+
+# Only set this to false if the custom enchantment plugin you are using already display the enchantment name
+ShowCustomEnchantmentNameOnLore: true
+
+# Award enchanting advancement to player after they enchant their tools
+AwardAdvancement: false
+
+# Hide the enchantment from the GUI if the player has no permission
+HideEnchantmentIfNoPermission: true
+
+# Allow player to enchant book
+AllowToEnchantBook: false
+
+# Disable an economy for all the enchantments
+disabled-economy:
+  - none
+  #- money
+  #- level
+  #- exp
+  #- lapis
+
+stacked-item:
+  allow: false
+  price-multiply: false
+
+# Limit the amount of enchantment can be enchanted into a type of item
+# set -1 for unlimited enchantment amount
+#
+# Format for overriding the enchantment limit: [Material].[number]
+enchantment-limit:
+  default-limit: 3
+  override:
+    - 'DIAMOND_PICKAXE.5'
+    - 'DIAMOND_SWORD.5'
+    - 'DIAMOND_AXE.5'
+    - 'DIAMOND_HELMET.5'
+    - 'DIAMOND_CHESTPLATE.5'
+    - 'DIAMOND_LEGGINGS.5'
+    - 'DIAMOND_BOOTS.5'
+
+
+sounds:
+  open_gui:
+    enable: true
+    sound: BLOCK_ENCHANTMENT_TABLE_USE
+    volume: 1.0
+    pitch: 1.0
+  success_enchant:
+    enable: true
+    sound: BLOCK_ENCHANTMENT_TABLE_USE
+    volume: 1.0
+    pitch: 1.0
+  fail_enchant:
+    enable: true
+    sound: BLOCK_ANVIL_PLACE
+    volume: 1.0
+    pitch: 1.0
+
+# A server restart is required if enable/disable this
+alias-commands:
+  enable: false
+  commands:
+    - upgrade
+
+generation_setting:
+  # Automatically add the conflict enchantment to "ignore-conflict" section when generating the file
+  # E.g. Smite cannot be enchanted onto a sword once it has Sharpness. When this is set to true, the plugin will generate the file (if it does not exist)
+  #      and add Smite to the 'ignore-conflict' section automatically, allowing the player to enchant Smite onto a sword regardless of whether it has Sharpness.
+  ignore_enchantment_conflict: true
+
+Message:
+  No-Available-Item: '&cYou don''t have any item can be enchanted.'
+  Successful-Enchant-Item: '&6You have sucessfully enchanted &f{ENCHANTMENT} &6into your {ITEM}'
+  Not-Enough-Money: '&cYou don''t have enough money to enchant!'
+  Not-Enough-Level: '&cYou don''t have enough level to enchant!'
+  Not-Enough-Custom-Economy: '&cYou don''t have enough {NAME} to enchant!'
+  Does-Not-Reach-Minimum-Level: '&cYou must be above level {MINIMUM_LEVEL} to be able to enchant this!'
+  Not-Enough-Lapis: '&cYou don''t have enough lapis to enchant!'
+  No-Enchantment-Permission: '&cYou don''t have permission to enchant this!'
+  No-Enchantment-Level-Permission: '&cYou don''t have permission to enchant this level!'
+  No-Permission: '&cYou don''t have permission to do this!'
+  Inventory-Full: '&cYour inventory is full! Please clean out some space before enchanting!'

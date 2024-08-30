@@ -1,0 +1,86 @@
+# This file is not intended to be manually modified! If you want to manually edit this file anyway, ensure that the server is not running currently and that you have prepared a backup of this file.
+
+data-version: 3|2|3955
+'1':
+  uniqueId: a1d4cd5d-a4c1-4765-a8fc-1bcbae1176cc
+  world: world
+  x: -28
+  y: 63
+  z: -131
+  yaw: 357.1717
+  type: admin
+  name: '&bたかぎ商店'
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:cleric
+    villagerType: minecraft:snow
+    villagerLevel: 5
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: SHULKER_SHELL
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: WHEAT
+        amount: 64
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: DIAMOND
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: IRON_INGOT
+        amount: 64
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: TOTEM_OF_UNDYING
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: DIAMOND
+        amount: 16
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: TRIDENT
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: WHEAT
+        amount: 64
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: WHEAT
+        amount: 64
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: NAME_TAG
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: IRON_INGOT
+        amount: 32
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: ARROW
+        amount: 16
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3955
+        type: FEATHER
+        amount: 64
+  snapshots: []

@@ -1,0 +1,147 @@
+version: '3.9'
+services:
+  velocity:
+    build:
+      context: ./velocity
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./velocity:/app/velocity
+    tty: true
+    stdin_open: true
+    environment:
+      TZ: "Asia/Tokyo"
+      JAVA_OPTS: "-Xms1024M -Xmx1024M"
+    depends_on:
+      - lobby
+      - db
+    ports:
+      - 25565:25565/tcp
+      - 19132:19132/udp
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - default
+      - db
+  lobby:
+    container_name: lobby
+    hostname: lobby
+    build:
+      context: ./lobby
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./lobby:/app/paper
+    tty: true
+    stdin_open: true
+    environment:
+      TZ: "Asia/Tokyo"
+      JAVA_OPTS: "-Xms2048M -Xmx2048M"
+    depends_on:
+      - alpha
+      - beta
+      - db
+    networks:
+      - default
+      - db
+  alpha:
+    container_name: alpha
+    hostname: alpha
+    build:
+      context: ./alpha
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./alpha:/app/paper
+    tty: true
+    stdin_open: true
+    environment:
+      TZ: "Asia/Tokyo"
+      JAVA_OPTS: "-Xms8192M -Xmx8192M"
+    depends_on:
+      - db
+    networks:
+      - default
+      - db
+  beta:
+    container_name: beta
+    hostname: beta
+    build:
+      context: ./beta
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./beta:/app/paper
+    tty: true
+    stdin_open: true
+    environment:
+      TZ: "Asia/Tokyo"
+      JAVA_OPTS: "-Xms4096M -Xmx4096M"
+    depends_on:
+      - db
+    networks:
+      - default
+      - db
+  gamma:
+    container_name: gamma
+    hostname: gamma
+    build:
+      context: ./gamma
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./gamma:/app/paper
+    tty: true
+    stdin_open: true
+    environment:
+      TZ: "Asia/Tokyo"
+      JAVA_OPTS: "-Xms4096M -Xmx4096M"
+    depends_on:
+      - db
+    networks:
+      - default
+      - db
+  backup:
+    hostname: backup
+    user: root
+    build:
+      context: ./backup
+      dockerfile: Dockerfile
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /mnt/storage1:/mnt/storage1
+      - /mnt/storage2:/mnt/storage2
+      - ./alpha/world:/app/alpha/world
+      - ./alpha/world_nether:/app/alpha/world_nether
+      - ./alpha/world_the_end:/app/alpha/world_the_end
+      - ./beta/world:/app/beta/world
+      - ./beta/world_nether:/app/beta/world_nether
+      - ./beta/world_the_end:/app/beta/world_the_end
+      - ./gamma/world:/app/gamma/world
+      - ./gamma/world_nether:/app/gamma/world_nether
+      - ./gamma/world_the_end:/app/gamma/world_the_end
+    environment:
+      TZ: "Asia/Tokyo"
+  db:
+    container_name: minecraft_db
+    hostname: minecraft_db
+    restart: unless-stopped
+    image: mariadb:10.7.3-focal
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./db/log:/var/log/mysql
+      - ./db/init:/docker-entrypoint-initdb.d
+    environment:
+        TZ: 'Asia/Tokyo'
+        MYSQL_ROOT_PASSWORD: 'root'
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
+    networks:
+      - db
+  restart:
+    container_name: restart
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  db:

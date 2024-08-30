@@ -1,0 +1,99 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 30
+npc:
+  '30':
+    name: §cこのサーバーはオフラインです
+    uuid: e5c514f0-7c40-4a68-a8a8-fae7c3e4c58d
+    traits:
+      spawned: true
+      location:
+        bodyYaw: 0.0
+        world: world
+        x: 0.0
+        y: -45.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PANDA
+    traitnames: spawned,scoreboardtrait,location,type
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '29':
+    name: §cこのサーバーはオフラインです
+    uuid: 86ab2449-8810-4b29-93fb-05394c994074
+    traits:
+      spawned: true
+      location:
+        bodyYaw: 0.0
+        world: world
+        x: 0.0
+        y: -45.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PANDA
+    traitnames: spawned,scoreboardtrait,location,type
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '28':
+    name: §agamma§7 (0/30)
+    uuid: 70b4c7de-8e54-4f93-a955-fbd7f4d3ef8a
+    traits:
+      spawned: true
+      location:
+        bodyYaw: 180.0
+        world: world
+        x: 8.0
+        y: -56.0
+        z: -14.0
+        yaw: -180.0
+        pitch: 3.0
+      type: PANDA
+    traitnames: spawned,scoreboardtrait,location,type
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '27':
+    name: §abeta§7 (0/30)
+    uuid: 046bc6a4-6088-42f0-b460-cfb962e0e91f
+    traits:
+      spawned: true
+      location:
+        bodyYaw: 180.0
+        world: world
+        x: 4.0
+        y: -56.0
+        z: -14.0
+        yaw: -180.0
+        pitch: 3.0
+      type: PANDA
+    traitnames: spawned,scoreboardtrait,location,type
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '26':
+    name: §aalpha§7 (0/30)
+    uuid: 09da9924-854a-482a-8792-058b302948e7
+    traits:
+      spawned: true
+      location:
+        bodyYaw: 180.0
+        world: world
+        x: 5.8
+        y: -56.0
+        z: -14.0
+        yaw: -180.0
+        pitch: 3.0
+      type: PANDA
+    traitnames: spawned,scoreboardtrait,location,type
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false

@@ -1,0 +1,76 @@
+# ##############################################################################
+# name: Luck Of The Sea
+# enable: true
+# multiply:
+#   enable: false
+#   money: 0.1
+#   level: 0.1
+#   lapis: 0.1
+#
+# # Luck Of The Sea will not be available for all of the items in the blacklist
+# blacklisted-items:
+#   - 'DIAMOND_SWORD'
+#   - 'BOW'
+#
+# # Player will not able to enchant Luck Of The Sea if their item has below enchantments
+# blacklisted-enchantments:
+#   - 'sharpness'
+#
+# # Ignore the enchantment conflict set by minecraft or other custom enchantment plugin
+# ignore-conflict:
+#   - 'depth_strider'
+#
+# # Ignore the item conflict set by minecraft or other custom enchantment plugin
+# ignore-item-conflict:
+#   - 'DIAMOND_SWORD'
+#
+# #Set level limit at a type of item
+# #In this example, IRON_SWORD can only enchant level 1 of this enchantment
+# level-limit:
+#   - 'IRON_SWORD.1'
+#
+# levels:
+#    1: #level 1 
+#      money: 1000.0 #Set to 0 as taking no money to enchant
+#      level: 3 # Set to 0 as taking no level to enchant
+#      exp: 0 # Set to 0 as taking no exp to enchant
+#      lapis: 22 # Set to 0 as taking no lapis to enchant
+# ##############################################################################
+
+config-version: 2.4
+name: Luck Of The Sea
+enable: true
+display_item:
+  material: ENCHANTED_BOOK
+  data: 0
+multiply:
+  enable: false
+  money: 0.1
+  level: 0.1
+  lapis: 0.1
+  exp: 0.1
+blacklisted-items: []
+blacklisted-enchantments: []
+ignore-conflict:
+- silk_touch
+ignore-item-conflict: []
+level-limit: []
+levels:
+  '1':
+    money: 1000.0
+    level: 3
+    exp: 0
+    lapis: 10
+    minimum_level: 2
+  '2':
+    money: 2000
+    level: 2
+    exp: 0
+    lapis: 3
+    minimum_level: 0
+  '3':
+    money: 3000
+    level: 3
+    exp: 0
+    lapis: 5
+    minimum_level: 2

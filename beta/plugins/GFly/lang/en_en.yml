@@ -1,0 +1,31 @@
+#
+# Language-File created by:		Gecolay
+#
+  
+  
+  
+Plugin:
+  
+  plugin-start: "[P]&a The Plugin was successfully enabled."
+  plugin-stop: "[P]&a The Plugin was successfully disabled."
+  plugin-prefix: "&7[&6GFly&7]"
+  
+  
+  
+Messages:
+  
+  command-config-reload: "[P]&a The settings were successfully reloaded."
+  command-permission-error: "[P]&c You have no permissions to use this command!"
+  command-consol-error: "[P]&c This command is only for Players!"
+  command-gfly-modus-error: "[P]&c The Flymode can't be changed in this Gamemode!"
+  command-gfly-activated: "[P]&a Flymode successfully&6 activated!"
+  command-gfly-disabled: "[P]&a Flymode successfully&6 deactivated!"
+  command-gfly-modus-other-error: "[P]&c Flymode can't be changed in&6 %Player%'s&c Gamemode!"
+  command-gfly-online-error: "[P]&c The Player&6 %Player%&c isn't Online!"
+  command-gfly-other-activated: "[P]&a Flymode from&6 %Player%&a successfully&6 activated!"
+  command-gfly-other-disabled: "[P]&a Flymode from&6 %Player%&a successfully&6 deactivated!"
+  command-gflyspeed: "[P]&a Your Flyspeed:&b %Speed%"
+  command-gflyspeed-speed-error: "[P]&b %Speed%&c is not a valid Flyspeed!"
+  command-gflyspeed-online-error: "[P]&c The Player&6 %Player%&c isn't Online!"
+  command-gflyspeed-change: "[P]&a Flyspeed successfully set to&b %Speed%&a!"
+  command-gflyspeed-change-other: "[P]&a Flyspeed from&6 %Player%&a successfully set to&b %Speed%&a!"

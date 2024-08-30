@@ -1,0 +1,4 @@
+check_for_updates: true
+log_if_update_found: true
+notice_admins: true
+delay_between_checks_in_minutes: 30

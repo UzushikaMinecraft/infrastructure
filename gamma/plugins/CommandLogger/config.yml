@@ -1,0 +1,60 @@
+# #######################################################
+# =====================================
+#  CommandLogger by Poweringg v2.2
+# =====================================
+# if you want colorize messages, you can use &a &9 &l etc..
+# Color formatting: http://minecraft.gamepedia.com/Formatting_codes
+#
+# LogSigns etc., ConsoleAnvils etc., Console logging, needs to restart a server.
+#
+# More about plugin > https://www.spigotmc.org/resources/commandlogger.21164/
+#
+# #######################################################
+
+# ## messages ###
+Prefix: '&8[&7PCL&8]'
+PrefixSign: '&8[&7PCLSign&8]'
+PrefixAnvil: '&8[&7PCLAnvil&8]'
+PlayerUsedCommand: '&7%player% used command: &3%cmd%'
+PlayerPlaceSign: '&7%player% placed sign with text: &3%line1% &8| &3%line2% &8| &3%line3%
+  &8| &3%line4%'
+PlayerUsedAnvil: '&7%player% renamed %item% to: &3%renamed%'
+DontHavePerm: '&cYou dont have the permission.'
+HelpCommands: '&7Commands: &a/pcl cmd'
+HelpCommandsLabel: '&2&lPCL Commands'
+HelpPcl: '&3/pcl &7- shows PCL info'
+HelpCmd: '&3/pcl cmd &7- shows all PCL commands'
+HelpVersion: '&3/pcl version &7- shows PCL version'
+HelpReload: '&3/pcl reload &7- reloads the plugin'
+HelpAllow: '&3/pcl allow &7- enable/disable log messages in chat'
+ReloadPlugin: '&7Reload successful!'
+MessagesDisabled: '&7Logging is disabled!'
+MessagesEnabled: '&7Logging is enabled!'
+
+PrefixConsoleCmd: '[PCL]'
+PrefixConsoleSign: '[PCLSign]'
+PrefixConsoleAnvil: '[PCLAnvil]'
+ConsoleNoticeCmd: 'Player %player% used command: %cmd%'
+ConsoleNoticeSigns: 'Player %player% wrote on sign: %line1% / %line2% / %line3% /
+  %line4% '
+ConsoleNoticeAnvils: 'Player %player% renamed %item% to: %renamed%'
+
+# ## commands which are not logged ###
+HiddenCommands:
+- /login
+- /l
+- /register
+- /changepassword
+
+# ## things which will be logged into chat ###
+LogCommands: true
+LogSigns: false
+LogAnvils: false
+
+# ## things which will be logged into console ###
+ConsoleCommands: false
+ConsoleAnvils: false
+ConsoleSigns: false
+INGAME_MESSAGE: '%prefix% %player% &7performed &c%command%'
+LOG_MESSAGE: '%player% used command %command%'
+PREFIX: '&8[&6CommandLogger&8] &7'

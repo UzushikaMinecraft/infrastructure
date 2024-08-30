@@ -1,0 +1,89 @@
+########################################################################################
+# Placeholders: (only available in enchantments-lore)
+# {MONEY} : return the money cost of the enchantment
+# {MONEY_FORMATTED} : return the money cost of the enchantment with formatted (k,m,b)
+# {LEVEL} : return the level cost of the enchantment
+# {LAPIS} : return the lapis cost of the enchantment
+# {PLAYER_MONEY} : return player money
+# {PLAYER_MONEY_FORMATTED} : return play money with formatted
+# {PLAYER_LEVEL} : return player level
+########################################################################################
+
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    damage: 0
+    amount: 1
+    display_name: ' '
+    lore:
+      - ''
+
+Gui-Settings:
+  size: 54
+  name: 'Enchant menu'
+  player-item: 13
+  enchantments-slot:
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+  next-page-item:
+    item:
+      material: ARROW
+      damage: 0
+      amount: 1
+      display_name: 'Next Page'
+      lore:
+        - ''
+    slot: 25
+  previous-page-item:
+    item:
+      material: ARROW
+      damage: 0
+      amount: 1
+      display_name: 'Previous Page'
+      lore:
+        - ''
+    slot: 19
+  back-item:
+    item:
+      material: OAK_DOOR
+      damage: 0
+      amount: 1
+      display_name: 'Back'
+      lore:
+        - ''
+    slot: 45
+  enchantments-lore:
+    - '&6Cost: &a${MONEY} + {LEVEL} level + {EXP} exp + {LAPIS} lapis'
+    - '&6Minimum Level: {MINIMUM_LEVEL}'
+    - ''
+    - '&6Current Money: &f{PLAYER_MONEY}'
+    - '&6Current Level: &f{PLAYER_LEVEL}'
+    - '&6Current Exp: &f{PLAYER_EXP}'
+
+ # When the specific enchantment is reached the max level, this will added to the enchanted book lore
+  enchantment-reached-max-level:
+    - '&cReached Max Level'
+    - ' '
+Gui:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      damage: 0
+      amount: 1
+      display_name: ' '
+      lore:
+        - ''
+    slot: 12
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      damage: 0
+      amount: 1
+      display_name: ' '
+      lore:
+        - ''
+    slot: 14

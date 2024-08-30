@@ -1,0 +1,24 @@
+sidebar:
+  title: "&dウズシカさーばー"
+  lines:
+    - "&rPing: {PING}ms"
+    - "&r総接続数: {TOTAL_CONNECTIONS}"
+    - "&7{DATE} {TIME}"
+  pattern:
+    date: yyyy/MM/dd
+    time: HH:mm:ss
+    world_date: yyyy/MM/dd
+    world_time: HH:mm
+servers:
+  - alpha:alpha:25567:5.8:-56:-14:180:3:&aサバイバル (Java / Bedrock)
+  - beta:beta:25568:4:-56:-14:180:3:&aサバイバル (Java / Bedrock)
+  - gamma:gamma:25569:8:-56:-14:180:3:&aクリエイティブ (Java / Bedrock)
+  - fishing:fishing:25570:0:0:0:0:0:&a釣り大会 (Java / Bedrock)
+  - event:event:25571:0:0:0:0:0:&aイベント (Java / Bedrock)
+join:
+  messages:
+    - "&dウズシカさーばーへようこそ！"
+    - "&rDiscord: &9https://discord.gg/N6gADVxcyp"
+    - "&rmonocraft: &ahttps://monocraft.net/servers/Md2LOd4g63m2PHKLHmBT"
+  title: "&dウズシカさーばーへようこそ"
+  subtitle: "コンパスをクリックしてサーバーを選んでね"

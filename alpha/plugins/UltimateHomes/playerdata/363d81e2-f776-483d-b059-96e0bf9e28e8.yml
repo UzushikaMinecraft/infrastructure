@@ -1,0 +1,11 @@
+player:
+  info:
+    lastSeenAs: iamtakagi
+homes:
+  home:
+    x: -25
+    y: 64
+    z: -150
+    yaw: 104.40028
+    pitch: 3.6000066
+    world: world

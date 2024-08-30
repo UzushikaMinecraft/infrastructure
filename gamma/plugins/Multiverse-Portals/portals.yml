@@ -1,0 +1,21 @@
+portals:
+  world-to-resources:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: iamtakagi
+    location: -18.0,63.0,-113.0:-15.0,67.0,-113.0
+    world: world
+    destination: resources
+  go_new_world:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ml_dayon
+    location: -10.0,63.0,-112.0:-10.0,66.0,-108.0
+    world: world
+    destination: world

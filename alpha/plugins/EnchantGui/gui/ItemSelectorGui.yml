@@ -1,0 +1,76 @@
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    damage: 10
+    amount: 1
+    display_name: ' '
+    lore:
+      - ''
+
+Gui-Settings:
+  size: 54
+  name: '&6Select an item'
+  player-items:
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+  next-page-item:
+    item:
+      material: ARROW
+      damage: 0
+      amount: 1
+      display_name: 'Next Page'
+      lore:
+        - ''
+    slot: 32
+  previous-page-item:
+    item:
+      material: ARROW
+      damage: 0
+      amount: 1
+      display_name: 'Previous Page'
+      lore:
+        - ''
+    slot: 30
+Gui:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      damage: 0
+      amount: 1
+      display_name: ' '
+      lore:
+        - ''
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      damage: 0
+      amount: 1
+      display_name: ' '
+      lore:
+        - ''
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      damage: 0
+      amount: 1
+      display_name: ' '
+      lore:
+        - ''
+    slot: 45
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      damage: 0
+      amount: 1
+      display_name: ' '
+      lore:
+        - ''
+    slot: 53

@@ -1,0 +1,6 @@
+Command:
+  Success: '&aエンダーチェストを開きました'
+  NoPermission: '&4権限がありません'
+  ConsoleCannotPerformCommand: '&4コンソールはこのコマンドを実行できません'
+  ReloadMessage: '&4リロードしました'
+  NoReloadPermission: '&4リロードの権限がありません'

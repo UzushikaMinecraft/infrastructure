@@ -1,0 +1,4 @@
+ProtectFarmland:
+  disable-farmland-turn-into-dirt: true
+  disable-player-destroy-farmland: true
+  disable-mob-destroy-farmland: true

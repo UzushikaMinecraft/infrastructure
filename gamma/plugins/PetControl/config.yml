@@ -1,0 +1,7 @@
+#
+# PetControl
+#
+# Implements the ability to set teleport, sounds, attack and defend settings on player's pets
+#
+debug: false
+

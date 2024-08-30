@@ -1,0 +1,47 @@
+prefix: ''
+command:
+  noPermission: '&cその操作を実行する権限がありません。'
+  reloaded: '&aUltimateHomesが正常にリロードされました！'
+  sethome:
+    usage: '&f使い方が無効です！ &3/sethome <name> を使用してください'
+    invalidSender: '&cホームを設定するにはプレイヤーでなければなりません。'
+    createdHome: '&f現在の場所にホームを設定しました。'
+    createdNamedHome: '&fホーム名 &3%arg1&f を現在の場所に作成しました。'
+    noMoreHomes: '&fこれ以上ホームを設定できません。ホームを削除するには /delhome <name> を使用してください。 (制限: &3%arg1&f)'
+    nameAlreadyExists: '&f名前 &3%arg1&f のホームがすでに存在します！ 別の名前で再試行してください。'
+    nonAlphanumeric: '&fホーム名は英数字でなければなりません; 名前 &3%arg2 &f で再試行するか、別の名前を選んでください。'
+    nonAlphanumericNoSuggestion: '&fホーム名は英数字でなければなりません; 別の名前を選んでください。'
+    unsafeLocation: '&cここでは安全でないため、ホームを設定できません！'
+  home:
+    usage: '&f使い方が無効です！ &3/home <name> を使用してください'
+    invalidSender: '&cホームにテレポートするにはプレイヤーでなければなりません。'
+    invalidHome: '&f名前 &3%arg1&f のホームがありません。&3/homes&f を入力してホームを確認してください。'
+    teleportedHome: '&f自宅にテレポートしました。 (&bx&3%arg3&f, &by&3%arg4&f, &bz&3%arg5&f, &fin
+      &3%arg2&f)'
+    teleportedHomeNamed: '&fホーム &3%arg1&f にテレポートしました。 (&bx&3%arg3&f, &by&3%arg4&f,
+      &bz&3%arg5&f, &fin &3%arg2&f)'
+    teleportedOther: '&f&3%arg6&f のホーム &3%arg1&f にテレポートしました。 (&bx&3%arg3&f, &by&3%arg4&f,
+      &bz&3%arg5&f, &fin &3%arg2&f)'
+    invalidHomeOther: '&3%arg2&f には名前 &3%arg1&f のホームがありません。&3/homes %arg2&f を入力してそのホームを確認してください。'
+    unknownPlayer: '&f不明なプレイヤー &3%arg1&f。'
+    warmup: '&fテレポートまで &3%arg1 &f秒です。動かずに待ってください...'
+    teleportationCancelled: '&c移動しました！ テレポートがキャンセルされました。'
+    unsafeTeleport: '&c警告: 目的地が安全でない可能性があります！ テレポートを確認するには、すぐにコマンドを再実行してください。'
+  homes:
+    usage: '&f使い方が無効です！ &3/homes <player> を使用してください'
+    invalidSender: '&cホームを表示するにはプレイヤーでなければなりません。'
+    unknownPlayer: '&f不明なプレイヤー &3%arg1&f。'
+    homes: '&fホーム &8(&f%arg1&8) &f- %arg2'
+    homesOther: '&3%arg1&f のホーム &8(&f%arg2&8)&f: %arg3'
+    homeListSeparator: '&f, '
+    homeListColor: '&3'
+    noHomes: '&f設定されたホームがありません！ &3/sethome <name> で設定してください'
+    noHomesOther: '&3%arg1&f には設定されたホームがありません。'
+  delhome:
+    usage: '&f使い方が無効です！ &3/delhome [player] <name> を使用してください'
+    invalidHome: '&f名前 &3%arg1&f のホームがありません。&3/homes&f を入力してホームを確認してください。'
+    invalidHomeOther: '&3%arg2&f には名前 &3%arg1&f のホームがありません。&3/homes %arg2&f を入力してそのホームを確認してください。'
+    deleted: '&fホーム &3%arg1 &fが削除されました。'
+    deletedOther: '&3%arg2&f のホーム &3%arg1 &fが削除されました。'
+    unknownPlayer: '&f不明なプレイヤー &3%arg1&f。'
+    invalidSender: '&cホームを削除するにはプレイヤーでなければなりません。'

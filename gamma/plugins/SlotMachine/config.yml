@@ -1,0 +1,104 @@
+# IMPORTANT : When you need to add apostrophes : ' please add TWO apostrophes, like this '' otherwise the config file will be wiped
+#
+
+#
+# Internal value
+debug: false
+#
+# Internal value
+pluginVersion: 6
+#
+# Language to be used
+# See the 'Supports Localization' part of the plugin page on Spigot website
+# Valid values are :
+# en    (english)              -- Default value - Complete and high quality
+# fr    (french)               --               - Complete and high quality
+# zh-CN (Simplified Chinese)   --               - Complete and high quality
+# zh-TW (Traditional Chinese)  --               - Complete and high quality
+# de    (German)               --               - Complete but quality is unknown
+# ru    (Russian)              --               - Complete but quality is unknown
+# es-ES (Spanish)              --               - Very incomplete and quality may be low
+# ko    (Korean)               --               - Very incomplete and quality is unknown
+# pt-BR (Brazilian Portuguese) --               - Incomplete and unknown quality
+# tr    (tr-TR)                --               - Incomplete and unknown quality
+# vi    (Vietnamese)           --               - Very incomplete and quality may be low
+# it    (Italian)              --               - Incomplete and unknown quality
+# ja    (Japanese)             --               - Very incomplete and quality is unknown
+# ro    (Romanian)             --               - Very incomplete and quality is unknown
+#
+# IMPORTANT NOTE : If you did not disable language over-the-air updates,
+# your selected language will get updated automatically when the plugin loads/at server startup or
+# by running the /smupdatelanguages command.
+# Because of that the quality and coverage of the language you selected may improve over time.
+#
+# Want to contribute to the quality of your language or find your language is missing ?
+# Head here and help us translate the plugin : https://crowdin.com/project/slot-machine/invite?h=85a84eff6fc4e68863a2560c3d765e491657749
+#
+# You can also create your own translation, please read the 'readme' file in the langs folder for more informations.
+language: en
+#
+# Allows you to receive updates for the official language files without having to update the plugin
+# Updates are done when the plugin loads
+# You can force an update with the command /smupdatelanguages and the changes will be applied immediately
+# Updates are fetched directly from Crowdin, our official translation platform
+# You can help us translate the plugin by going to https://crowdin.com/project/slot-machine
+enableLanguageOTAUpdates: true
+#
+# Don't require players to have the 'slotmachine.access.default' permission to play
+# Note : Slot Machines using a different permission name will still require permission
+noPermissionNeededForDefaultAccess: false
+#
+# Whether all machines should be copied to the 'machinesLastBackup' folder when the plugin is disabled
+backupMachinesOnPluginUnload: true
+#
+# Whether to report exceptions to Slot Machine developer, no identifying information is transmitted
+anonymouslyReportExceptionsToDeveloper: true
+#
+# Default permission denied message
+# Default value is to check the language file with the key 'permission.denied'
+permissionDenied: permission.denied
+#
+# Default message when a player doesn't have enough money
+# Default value is to check the language file with the key 'money.notenough'
+notEnoughMoney: money.notenough
+#
+# Default message when a player doesn't have enough tokens (from Slot Machine)
+# Default value is to check the language file with the key 'tokens.notenough'
+notEnoughTokens: tokens.notenough
+#
+# Default message when a player doesn't have enough GamePoints
+# Default value is to check the language file with the key 'gamepoints.notenough'
+notEnoughGamePoints: gamepoints.notenough
+#
+# Default message when a player doesn't have enough tokens (from TokensManager)
+# Default value is to check the language file with the key 'tokenmanager.notenough'
+notEnoughTokensManager: tokenmanager.notenough
+#
+# Whether to show the item name the player has won in the chat when they win
+# Setting this to true can help with players not realizing what they won
+showItemName: true
+#
+# Default win message
+# This can be customized independently for each machine
+defaultWinMessage: '&a&lYou Won !'
+#
+# Default win message
+# This can be customized independently for each machine
+defaultLossMessage: '&c&lYou Lost, try again !'
+#
+# Default 'Good Luck' message when a player starts playing
+# Default value is to check the language file with the key 'play.goodluck'
+# Set it to '' (2 apostrophes) to remove it
+goodLuck: play.goodluck
+#
+# How much chance to win per luck (Potion Effect) level is added to the machine's chance
+# This can be negative and will affect chance accordingly
+luckLevelToPercentConversion: 12.5
+#
+# How much chance to win per bad-luck (Potion Effect) level is added to the machine's chance
+# This can be negative and will affect chance accordingly
+badLuckLevelToPercentConversion: -12.5
+#
+# Which Spigot Material to use to interact with machines
+# A complete list can be found here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+adminToolMaterial: BLAZE_ROD
